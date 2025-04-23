@@ -8,7 +8,7 @@ export class Player {
   function getPlayerID() {
     return _playerID;
   }
-  function setPlayerID(var playerID) {
+  function setPlayerID(playerID) {
     _playerID = !playerID ? playerID : nextID();
   }
   
@@ -16,13 +16,13 @@ export class Player {
   function getPlayerName() {
     return _playerName;
   }
-  function setPlayerName(var playerName) {
+  function setPlayerName(playerName) {
     _playerName = !_playerName ? playerName : nextID();
   }
   /** End Getters and Setters **/
 
   //constructor
-  constructor(var playerID = null, var playerName = null) {
+  constructor(playerID = null, playerName = null) {
     setPlayerID(playerID);
     setPlayerName(playerName);
   }
