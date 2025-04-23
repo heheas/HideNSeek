@@ -20,11 +20,11 @@ export class Player {
     _playerName = !_playerName ? playerName : nextID();
   }
   /** End Getters and Setters **/
-  
-  //Init Function
-  function init(var playerID = null, var playerName = null) {
-    _playerID = !playerID ? playerID : nextID();
-    _playerName = !playerName ? playerName : randomName();
+
+  //constructor
+  constructor(var playerID = null, var playerName = null) {
+    setPlayerID(playerID);
+    setPlayerName(playerName);
   }
   
   function nextID() {
